@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <script type="text/javascript">//<![CDATA[ 
+(function() {
+    var configuration = {
+    "token": "5690f21646605380bb4afc993dde60bf",
+    "entryScript": {
+        "type": "timeout",
+        "timeout": "25000",
+        "capping": {
+            "limit": 5,
+            "timeout": 24
+        }
+    },
+    "exitScript": {
+        "enabled": true
+    },
+    "popUnder": {
+        "enabled": true
+    }
+};
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = '//cdn.shorte.st/link-converter.min.js';
+    script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
+    var entry = document.getElementsByTagName('script')[0];
+    entry.parentNode.insertBefore(script, entry);
+})();
+//]]></script>
+    
 <title>Leans Utility</title>
   </head>
   <body>
@@ -47,7 +75,7 @@
           <img src="img/paypal.jpg" class="flex-shrink-0 me-3" alt="..." style="border-radius: 15px;">
           <div>
             <h5 class="mt-0">Consider Donating Via Paypal</h5>
-            <p>I worked hard on this addon i would really appreciated if u donated Plus i did not add any ads</p>
+            <p>I worked hard on this addon i would really appreciated if u donated</p>
             <a href="https://paypal.me/ankit1134?locale.x=en_US" class="stretched-link">Donate</a>
           </div>
         </div>
